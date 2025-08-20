@@ -1,0 +1,20 @@
+.logo {
+width: 127px;
+height: auto;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 20px;
+    height: fit-content;
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+.avatar {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+object-fit: cover;
+}

@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.usersection {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    font-size: 0.75rem;
+    text-align: left;
+}
+.postimg{
+    width: 100%;
+}
+.avatar {
+width: 30px;
+height: auto;
+    
+}
+.avatar > img {
+    width: 100%;
+    border-radius: 50%;
+}
+button{
+    background: none;
+    border: none;
+}
+button > img {
+    width: 30px;
+    height: auto;
+    background-color: none;
+}
