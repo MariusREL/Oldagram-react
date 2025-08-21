@@ -1,7 +1,7 @@
 import styles from "./Post.module.css"
 import { use, useState } from "react"
 
-export function Post ({name, location, avatar, post, likes, comment, username}){
+export function Post ({name, location, avatar, post, likes, comment, username, isLast}){
 
     const [isLiked, setisLiked] = useState(false)
 
@@ -16,7 +16,7 @@ export function Post ({name, location, avatar, post, likes, comment, username}){
 
 
     return <>
-        <div className={styles.container}>
+        <div className={isLast ? styles.containerLast : styles.container}>
             <section className={styles.usersection}>
                 <div className={styles.avatar}>
                 <img src={avatar} alt="" />

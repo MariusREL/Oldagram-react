@@ -1,6 +1,7 @@
 .container{
     display: flex;
     flex-direction: column;
+    border-bottom: 20px solid rgb(213, 210, 210);
 }
 .usersection {
     display: flex;
@@ -49,6 +50,7 @@ button > img {
     align-items: start;
     margin: 0px 10px 10px;
     line-height: 1.5rem;
+    text-align: start;
 }
 
 .bottomSection p{
@@ -59,5 +61,12 @@ span{
 }
 button:hover {
     transform: scale(1.1);
-    
+
+}
+
+.containerLast {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    /* no border-bottom */
 }
