@@ -19,7 +19,7 @@ export function Post ({name, location, avatar, post, likes, comment, username, i
         <div className={isLast ? styles.containerLast : styles.container}>
             <section className={styles.usersection}>
                 <div className={styles.avatar}>
-                <img src={avatar} alt="" />
+                    <img src={`${import.meta.env.BASE_URL}${avatar}`} alt="" />
                 </div>
                 <div>
                     <p className={styles.name}>{name}</p>
@@ -27,14 +27,25 @@ export function Post ({name, location, avatar, post, likes, comment, username, i
                 </div>
                 </section>
                 <div>
-                    <img onDoubleClick={handleImageDoubleClick} className={styles.postimg} src={post} alt="{name}" /></div>
-
+                    <img 
+                    onDoubleClick={handleImageDoubleClick} 
+                    className={styles.postimg} 
+                    src={`${import.meta.env.BASE_URL}${post}`} 
+                    alt={name} 
+                />
+                </div>
             
             
             <section className={styles.icons}>
-                <button onClick={handleLikeButton}><img src="/img/icon-heart.png" alt="Like" /></button>
-                <button><img src="/img/icon-comment.png" alt="Comment" /></button>
-                <button><img src="/img/icon-dm.png" alt="Share" /></button>
+                <button onClick={handleLikeButton}>
+                    <img src={`${import.meta.env.BASE_URL}img/icon-heart.png`} alt="Like" />
+                </button>
+                <button>
+                    <img src={`${import.meta.env.BASE_URL}img/icon-comment.png`} alt="Comment" />
+                </button>
+                <button>
+                    <img src={`${import.meta.env.BASE_URL}img/icon-dm.png`} alt="Share" />
+                </button>
             </section>
             <section className={styles.bottomSection}>
                 <p>{displayedLikes} Likes</p>
