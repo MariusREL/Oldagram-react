@@ -15,3 +15,7 @@
     color: black;
     min-height: 100vh;
 }
+body{
+    display: flex;
+    justify-content: center;
+}

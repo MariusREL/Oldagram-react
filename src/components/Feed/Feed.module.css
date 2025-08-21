@@ -1,0 +1,10 @@
+.feed{
+    margin: 0;
+    padding: 0;
+}
+.divider {
+    height: 20px;
+    background-color: rgb(213, 210, 210);
+    margin: 0; 
+    width: 100%;
+}

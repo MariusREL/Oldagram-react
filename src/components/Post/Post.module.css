@@ -9,8 +9,16 @@
     font-size: 0.75rem;
     text-align: left;
 }
+.name {
+    font-weight: bold;
+}
 .postimg{
     width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 .avatar {
 width: 30px;
@@ -29,4 +37,23 @@ button > img {
     width: 30px;
     height: auto;
     background-color: none;
+}
+.icons{
+    padding: 10px 10px 5px;
+    display: flex;
+    gap: 10px;
+}
+.bottomSection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0px 10px 10px;
+    line-height: 1.5rem;
+}
+
+.bottomSection p{
+    font-weight: bold;
+}
+span{
+    font-weight: 400;
 }

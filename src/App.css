@@ -1,14 +1,15 @@
 #root {
-    min-width: 100vh;
+    min-width: 100vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(4, 32, 57);
+    padding: 0;
 }
 
 .container {
-    width: 375px;
+    width: 70%;
     max-width: 800px;
     height: fit-content;
     display: flex;
@@ -18,5 +19,4 @@
     text-align: center;
     margin: 0 auto;
     background-color: #fff;
-    border: 1px solid white;
 }

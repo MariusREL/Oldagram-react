@@ -8,12 +8,12 @@ export function Post ({name, location, avatar, post, likes, comment, username}){
                 <img src={avatar} alt="" />
                 </div>
                 <div>
-                    <p>{name}</p>
+                    <p className={styles.name}>{name}</p>
                     <p>{location}</p>
                 </div>
                 </section>
                 <div>
-                    <img className={styles.postimg} src={post} alt="Vincent Vangogh" /></div>
+                    <img className={styles.postimg} src={post} alt="{name}" /></div>
 
             
             
@@ -23,7 +23,7 @@ export function Post ({name, location, avatar, post, likes, comment, username}){
                 <button><img src="/img/icon-dm.png" alt="Share" /></button>
             </section>
             <section className={styles.bottomSection}>
-                <p>21,492 likes</p>
+                <p>{likes} Likes</p>
                 <p>Vincey1853 <span className={styles.span}>just took a few shrooms lol</span>
 
                 </p>
